@@ -1,0 +1,3 @@
+/home/enes/Desktop/http/build/CMakeFiles/myHttp.dir
+/home/enes/Desktop/http/build/CMakeFiles/edit_cache.dir
+/home/enes/Desktop/http/build/CMakeFiles/rebuild_cache.dir
