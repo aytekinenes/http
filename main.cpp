@@ -1,6 +1,8 @@
 #include <iostream>
 #include <curl/curl.h>
+#include "json.hpp"
 
+using json = nlohmann::json;
 using namespace std;
 
 int main()
@@ -19,13 +21,19 @@ int main()
 
     result = curl_easy_perform(curl);
 
-    if( result != CURLE_OK)
+        // JSON verilerini parse edelim
+    if (result != CURLE_OK) 
     {
-        cout << "curl error" << endl;
+        cout << "curl error: " << curl_easy_strerror(result) << endl;
+    } 
+    else 
+    {
+        json responseData = json::parse(curl_easy_strerror(result));
+        for (const auto& item : responseData) 
+        {
+            cout << "User ID: " << item["userId"] << ", ID: " << item["id"] << ", Title: " << item["title"] << endl;
+        }
     }
-    curl_easy_cleanup(curl);
-
-
 
     return 0;
 }
