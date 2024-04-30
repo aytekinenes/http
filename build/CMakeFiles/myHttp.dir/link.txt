@@ -1,1 +1,1 @@
-/usr/bin/c++ -rdynamic CMakeFiles/myHttp.dir/main.cpp.o -o myHttp  -lcurl 
+/usr/bin/c++ -rdynamic CMakeFiles/myHttp.dir/main.cpp.o -o myHttp  -lcurl -lcurl 

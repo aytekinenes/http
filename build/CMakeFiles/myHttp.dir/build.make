@@ -93,6 +93,7 @@ myHttp_EXTERNAL_OBJECTS =
 myHttp: CMakeFiles/myHttp.dir/main.cpp.o
 myHttp: CMakeFiles/myHttp.dir/build.make
 myHttp: /usr/lib/x86_64-linux-gnu/libcurl.so
+myHttp: /usr/lib/x86_64-linux-gnu/libcurl.so
 myHttp: CMakeFiles/myHttp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/enes/Desktop/http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable myHttp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myHttp.dir/link.txt --verbose=$(VERBOSE)
